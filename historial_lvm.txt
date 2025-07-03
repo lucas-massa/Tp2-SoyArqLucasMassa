@@ -1,0 +1,143 @@
+    1  #config.vm.box = "generic/rhel8"
+    2  #config.vm.box = "generic/rhel9"
+    3  config.vm.box = "ubuntu/jammy64"
+    4  #config.vm.box = "ubuntu/jammy64"
+    5  clear
+    6  clean
+    7  clear
+    8  cd
+    9  ls -l
+   10  ll
+   11  vagrant halt
+   12  lsblk
+   13  m
+   14  n
+   15  ls/def/
+   16  ls/dev/
+   17  ls /dev/
+   18  sudo fdisk/dev/sda
+   19  sudo fdisk /dev/sda
+   20  lsblk
+   21  sudo fdisk /dev/sdc
+   22  lsblk
+   23  sudo fdisk /dev/sdc
+   24  q
+   25  lsblk
+   26  sudo fdisk /dev/sdc
+   27  lsblk
+   28  sudo fdisk /dev/sdc
+   29  lsblk
+   30  sudo fdisk /dev/sdc
+   31  lsblk
+   32  sudo fdisk /dev/sdc
+   33  lsblk
+   34  sudo fdisk /dev/sdc
+   35  lsblk
+   36  sudo fdisk /dev/sdc
+   37  lsblk
+   38  sudo fdisk /dev/sdc
+   39  lsblk
+   40  sudo fdisk /dev/sdc
+   41  lsblk
+   42  sudo fdisk /dev/sdc
+   43  lsblk
+   44  sudo fdisk /dev/sdc
+   45  lsblk
+   46  sudo fdisk /dev/sdc
+   47  sudo fdisk /dev/sdd
+   48  lsblk
+   49  history
+   50  sudo fdisk /dev/sdc
+   51  lsblk
+   52  ls -l
+   53  lsblk
+   54  sudo fdisk /dev/sdd
+   55  q
+   56  lsblk
+   57  m
+   58  sudo fdisk /dev/sdd
+   59  lsblk
+   60  disk /dev/sdd
+   61  fdisk /dev/sdd
+   62  q
+   63  cd disk /dev/sdd
+   64  ls -l disk /dev/sdd
+   65  lsblk
+   66  cd disk /dev/sdd
+   67  sudo fdisk /dev/sdd
+   68  lsblk
+   69  free
+   70  -h free
+   71  free -h
+   72  sudo mkswap /dev/sdd1
+   73  free -h
+   74  sudo swapon /dev/sdd1
+   75  free -h
+   76  swapon -s
+   77  dd if=/dev/zero of=swap.file bs=1 count=1024
+   78  ls -lh
+   79  lsblk
+   80  mkswap swap.file
+   81  swapon swap.file
+   82  free -h
+   83  sudo swapon swap.file
+   84  free -h
+   85  swapon -f
+   86  cat /proc/sys/vm/swappiness
+   87  sudo fdisk /dev/sdc
+   88  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   89  sudo pvs
+   90  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   91  sudo vgs
+   92  sudo pvs
+   93  sudo vgcreate vg_web /dev/sdc2
+   94  sudo pvs
+   95  sudo lvcreate -L 1G vg_web -n lv_web1
+   96  sudo lvcreate -L 1G vg_web -n lv_web2
+   97  sudo lvcreate -L 1G vg_web -n lv_web3
+   98  lvs
+   99  sudo lvs
+  100  sudo pvs
+  101  sudo fdisk -l
+  102  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+  103  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+  104  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+  105  sudo lsblk -f
+  106  sudo apt update
+  107  sudo apt install apache2
+  108  ls -l /var/
+  109  ls -l /var/www
+  110  ls -l /var/
+  111  exit
+  112  lsblk
+  113  vagrant halt
+  114  exit
+  115  sudo pvs
+  116  sudo vgs 
+  117  sudo lvs
+  118  ls -l
+  119  cd ..
+  120  git clone git@github.com:lucas-massa/Tp2-SoyArq.git
+  121  ls -la
+  122  pwd
+  123  cd ..
+  124  pwd
+  125  cd /home/vagrant
+  126  pwd
+  127  git clone git@github.com:lucas-massa/Tp2-SoyArq.git
+  128  cd /home/vagrant
+  129  git clone git@github.com:lucas-massa/Tp2-SoyArqLucasMassa.git
+  130  ssh-keygen -t ed25519
+  131  git clone git@github.com:lucas-massa/Tp2-SoyArqLucasMassa.git
+  132  cd /home/vagrant
+  133  git clone git@github.com:lucas-massa/Tp2-SoyArqLucasMassa.git
+  134  ssh-keygen -t ed25519
+  135  git clone git@github.com:lucas-massa/Tp2-SoyArqLucasMassa.git
+  136  ssh-keygen -t ed25519
+  137  cat $HOME/.ssh/*.pub
+  138  git clone git@github.com:lucas-massa/Tp2-SoyArqLucasMassa.git
+  139  sudo pvs > pvs.txt
+  140  cd Tp2-SoyArqLucasMassa/
+  141  sudo vgs > vgs.txt
+  142  sudo lvs > lvs.txt
+  143  history > historial_lvm.txt
